@@ -32,6 +32,7 @@ const useGetImages = gameOptions => {
     useEffect(() => {
         if (!gameOptions) return;
         fetchPics();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [gameOptions]);
 
     return images;
